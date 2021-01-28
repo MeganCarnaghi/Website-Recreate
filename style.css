@@ -1,0 +1,339 @@
+/* GENERIC STYLING FOR ALL DEVICES */
+
+/* Import Custom Fonts */
+@font-face {
+  font-family: "Apercu-Regular", sans-serif;
+  src: url("fonts/Apercu-Font/Apercu Regular.otf") format("opentype");
+  font-weight: normal;
+  font-display: auto;
+}
+@font-face {
+  font-family: "Apercu-Bold", sans-serif;
+  src: url("fonts/Apercu-Font/Apercu Bold.otf") format("opentype");
+  font-weight: bold;
+  font-display: auto;
+}
+
+/* Remove default margin and padding on both pages */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Setting styling for body on both pages */
+body {
+  font-family: "Apercu-Regular", sans-serif;
+  font-size: 12px;
+  color: #53566b;
+}
+
+/* STYLING FOR MOBILE DEVICES */
+
+/* Styling for Header on both pages */
+header {
+  background-color: #ffffff;
+  padding: 8px 0 8px 0;
+}
+
+/* Styling for logo image on both pages */
+.logo {
+  margin-left: 10px;
+}
+
+/* Styling for nav ul on both pages */
+ul {
+  list-style-type: none;
+  margin-left: 25px;
+}
+
+/* Styling for nav li items on both pages */
+li {
+  padding: 7px 0px;
+}
+
+/* Styling for the nav links and their various states on both pages */
+li a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #53566b;
+}
+
+li a:visited {
+  text-decoration: none;
+  color: #53566b;
+}
+
+li a:focus {
+  text-decoration: none;
+  color: #53566b;
+}
+
+li a:hover {
+  text-decoration: none;
+  color: #53566b;
+}
+
+li a:active {
+  text-decoration: none;
+  color: #53566b;
+}
+
+/* Generic styling for all buttons and hover state on index.html */
+button {
+  font-family: "Apercu-Regular", sans-serif;
+  text-transform: uppercase;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+/* Styling for Sign Up button in header and its hover state on index.html */
+.sign-up-btn {
+  border: 1px solid #f48b44;
+  color: #f48b44;
+  font-size: 12px;
+  background-color: #ffffff;
+  margin-left: 20px;
+  margin-top: 7px;
+  margin-bottom: 10px;
+  padding: 10px 10px;
+  border-radius: 20px;
+  outline: none;
+}
+
+.sign-up-btn:hover {
+  background-color: #f48b44;
+  color: #ffffff;
+}
+
+/* Hiding the main login div on index.html on mobile version */
+.login-section {
+  visibility: hidden;
+}
+
+/* Hiding the sidebar div on app.html on mobile version */
+.sidebar {
+  visibility: hidden;
+}
+
+/* STYLING FOR MEDIUM DEVICES (landscape tablets, 768px and up) */
+@media screen and (min-width: 768px) {
+  /* Styling for header on both pages */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  /* Styling for header on app.html */
+  .app-header {
+    border-bottom: 1px solid #52556b;
+  }
+  /* Styling for navbar on both pages */
+  nav {
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+  }
+  /* Styling for nav ul on both pages */
+  ul {
+    display: flex;
+  }
+  /* Styling for nav links on both pages */
+  li {
+    padding: 0 10px;
+  }
+  /* Space between the Subscribe and the Log In links on index.html*/
+  .subscribe {
+    margin-right: 25px;
+  }
+  /* Styling for sign-up button on index.html */
+  .sign-up-btn {
+    margin-right: 5px;
+  }
+  /* Styling for main container div on both pages */
+  main {
+    position: relative;
+    display: flex;
+    height: calc(100vh - 98px);
+  }
+  /* Styling for main container with background image on index.html */
+  .container {
+    justify-content: center;
+    background: url(Images/willian-justen-de-vasconcellos-jUCQRQeRs3k-unsplash.jpg)
+      no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  /* Styling for main login section div on index.html */
+  .login-section {
+    visibility: visible;
+    width: 300px;
+    height: 465px;
+    background-color: #ffffff;
+    border-radius: 3px;
+    padding: 10px 20px;
+    margin-top: 50px;
+  }
+  /* Styling for h1 in main login section on index.html */
+  .login-heading {
+    margin: 20px 0px;
+    font-weight: bold;
+    text-align: center;
+  }
+  /* Styling for Sign Up paragrapgh on index.html */
+  .sign-up-p {
+    text-transform: uppercase;
+    font-size: 11px;
+    text-align: center;
+  }
+  /* Styling for Sign Up text on index.html */
+  .sign-up-txt {
+    color: #f48b44;
+  }
+  /* Styling for form on index.html*/
+  form {
+    margin-top: 50px;
+  }
+
+  /* styling for Email address and Password inputs on index.html */
+  input[type="email"],
+  input[type="password"] {
+    display: block;
+    width: 100%;
+    font-family: "Apercu-Regular", sans-serif;
+    font-size: 14px;
+    border: none;
+    border-bottom: 1px solid #e0e1e0;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    padding: 3px 0;
+    outline: none;
+  }
+  input[type="password"] {
+    margin-bottom: 3px;
+  }
+  /* Styling for forgot password link and it's various states on index.html */
+  .forgot-link {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #747575;
+    font-size: 10px;
+    display: block;
+    text-align: right;
+  }
+  .forgot-link:visited {
+    text-decoration: none;
+    color: #747575;
+  }
+  .forgot-link:active {
+    text-decoration: none;
+    color: #747575;
+  }
+  .forgot-link:focus {
+    text-decoration: none;
+    color: #747575;
+  }
+  .forgot-link:hover {
+    text-decoration: none;
+    color: #747575;
+  }
+  /*Styling for remember-me div on index.html */
+  .remember-me-div {
+    display: flex;
+    align-content: baseline;
+    margin-top: 20px;
+    margin-bottom: 9px;
+  }
+  /* Styling for remember me radio button on index.html */
+  input[type="radio"] {
+    border-color: #747575;
+  }
+
+  /* Styling for the radio button label on index.html */
+  .remember-me-label {
+    text-transform: uppercase;
+    font-size: 10px;
+    color: #747575;
+    padding-top: 2px;
+    padding-left: 5px;
+  }
+
+  /* Generic styling for buttons in main text div on index.html */
+  .main-btns {
+    width: 100%;
+    color: #ffffff;
+    font-size: 11px;
+    border: none;
+    border-radius: 3px;
+    padding: 17px 0;
+    margin: 7px 0;
+  }
+  /* Styling for login button and hover state on index.html */
+  .login-btn {
+    background-color: #52556b;
+  }
+  .login-btn:hover {
+    opacity: 85%;
+  }
+  /* Styling for login with Facebook button and hover state on index.html */
+  .facebook-btn {
+    background-color: #5092c8;
+  }
+  .facebook-btn:hover {
+    opacity: 85%;
+  }
+  /* Styling for login with Spotify button and hover state on index.html */
+  .spotify-btn {
+    background-color: #3fb257;
+  }
+  .spotify-btn:hover {
+    opacity: 85%;
+  }
+  /* Styling for sidebar on app.html */
+  .sidebar {
+    visibility: visible;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #52556b;
+    padding: 5px 0;
+    width: 200px;
+  }
+  /* Styling for top-section of sidebar on app.html */
+  .top-section {
+    display: flex;
+    flex-direction: column;
+  }
+  /* Styling for bottom-section of sidebar on app.html */
+  .bottom-section {
+    display: flex;
+    flex-direction: column;
+  }
+  /* Styling for links and their various states in sidebar on app.html */
+  .sidebar-item {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+    padding: 8px 15px;
+  }
+  .sidebar-item:visited {
+    text-decoration: none;
+    color: #ffffff;
+  }
+  .sidebar-item:active {
+    text-decoration: none;
+    color: #ffffff;
+  }
+  .sidebar-item:focus {
+    text-decoration: underline;
+    color: #ffffff;
+  }
+  .sidebar-item:hover {
+    text-decoration: underline;
+    color: #ffffff;
+  }
+}

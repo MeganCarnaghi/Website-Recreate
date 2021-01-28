@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Headspace</title>
+    <!-- Link to My CSS -->
+    <link rel="stylesheet" href="style.css" type="text/css" />
+  </head>
+  <body>
+    <!-- Header Start -->
+    <header class="home-header">
+      <!-- Logo Image -->
+      <img class="logo" src="Images/logo2.png" alt="Headspace logo" />
+      <!-- Nav Bar Start -->
+      <nav>
+        <!-- Ul with Nav Links -->
+        <ul>
+          <li><a href="#">The Science</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">For Work</a></li>
+          <li class="subscribe"><a href="#">Subscribe</a></li>
+          <li><a href="app.html">Log In</a></li>
+        </ul>
+        <!-- Sign Up Button -->
+        <button class="sign-up-btn">Sign Up For Free</button>
+      </nav>
+      <!-- Nav Bar End -->
+    </header>
+    <!-- Header End -->
+    <!--Main Div Centered -->
+    <main class="container">
+      <!-- Log In Div Start -->
+      <div class="login-section">
+        <!-- Log In Heading and Paragraph -->
+        <h1 class="login-heading">Log in</h1>
+        <p class="sign-up-p">
+          New to Headpsace? <span class="sign-up-txt">Sign up for free</span>
+        </p>
+        <!-- Login Form Start -->
+        <form action="" method="post" id="signin-form">
+          <!-- Email Input -->
+          <label for="email"></label>
+          <input
+            id="email"
+            type="email"
+            name="email"
+            placeholder="Email address"
+          />
+          <!-- Password Input -->
+          <label for="password"></label>
+          <input
+            id="password"
+            type="password"
+            name="password"
+            placeholder="Password"
+          />
+          <!-- Forgot Password Link -->
+          <a class="forgot-link" href="#">Forgot?</a>
+          <div class="remember-me-div">
+            <!-- Remember Me Radio Button -->
+            <input
+              id="remember-me"
+              type="radio"
+              name="remember-me"
+              value="remember-user"
+            />
+            <label class="remember-me-label" for="remember-me"
+              >Remember Me</label
+            >
+          </div>
+          <!-- Log In Button -->
+          <button type="submit" form="signin-form" class="main-btns login-btn">
+            Log In
+          </button>
+          <p class="sign-up-p">or</p>
+        </form>
+        <!-- Login Form End -->
+        <!-- Log In With Facebook Button -->
+        <button class="main-btns facebook-btn">Log In With Facebook</button>
+        <!-- Log In With Spotify Button -->
+        <button class="main-btns spotify-btn">Log In With Spotify</button>
+      </div>
+      <!-- Log In Div End -->
+    </main>
+    <!-- Main Div End -->
+  </body>
+</html>
