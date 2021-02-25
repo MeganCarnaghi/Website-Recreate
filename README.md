@@ -8,4 +8,4 @@ A recreation of a website log-in page that is mobile responsive.
 * CSS
 
 ## Link
-Link to deployed application: 
+Link to deployed application: https://megancarnaghi.github.io/Website-Recreate/
