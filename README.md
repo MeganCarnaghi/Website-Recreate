@@ -9,3 +9,6 @@ A recreation of a website log-in page that is mobile responsive.
 
 ## Link
 Link to deployed application: https://megancarnaghi.github.io/Website-Recreate/
+
+## Screenshot
+![Website Recreate](headspacerecreate.jpg)
