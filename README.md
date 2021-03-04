@@ -1,14 +1,18 @@
 # Website Recreate
 
 ## Description
+
 A recreation of a website log-in page that is mobile responsive.
 
 ## Technologies Used
-* HTML
-* CSS
+
+- HTML
+- CSS
 
 ## Link
+
 Link to deployed application: https://megancarnaghi.github.io/Website-Recreate/
 
 ## Screenshot
-![Website Recreate](headspacerecreate.jpg)
+
+![Website Recreate](Images/desktop-view.png)

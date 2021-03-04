@@ -38,6 +38,7 @@ header {
 /* Styling for logo image on both pages */
 .logo {
   margin-left: 10px;
+  width: 250px;
 }
 
 /* Styling for nav ul on both pages */
@@ -155,7 +156,7 @@ button:hover {
   main {
     position: relative;
     display: flex;
-    height: calc(100vh - 98px);
+    height: calc(100vh - 90.06px);
   }
   /* Styling for main container with background image on index.html */
   .container {
